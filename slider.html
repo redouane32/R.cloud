@@ -6,27 +6,32 @@
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; font-family: sans-serif; }
+
+    .container {
+      padding: 10px;
+      text-align: center;
+    }
+
     .slider {
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
+      gap: 10px;
+      padding: 10px 0;
     }
+
     .slider img {
       flex: 0 0 auto;
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      margin: 10px;
-      scroll-snap-align: start;
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
       border-radius: 10px;
+      scroll-snap-align: center;
     }
+
     .slider::-webkit-scrollbar {
       display: none;
-    }
-    .container {
-      padding: 20px;
-      text-align: center;
     }
   </style>
 </head>
@@ -34,13 +39,13 @@
   <div class="container">
     <h2>Our Dishes</h2>
     <div class="slider">
-      <img src="https://i.imgur.com/ChWWZAt.jpeg" alt="Dish 1">
-      <img src="https://i.imgur.com/Ulp9kO8.jpeg" alt="Dish 2">
-      <img src="https://i.imgur.com/OPVc2vo.jpeg" alt="Dish 3">
-      <img src="https://i.imgur.com/SjKDUtn.jpeg" alt="Dish 4">
+      <img src="https://i.imgur.com/ChWWZAt.jpeg" alt="Food 1">
+      <img src="https://i.imgur.com/Ulp9kO8.jpeg" alt="Food 2">
+      <img src="https://i.imgur.com/OPVc2vo.jpeg" alt="Food 3">
+      <img src="https://i.imgur.com/SjKDUtn.jpeg" alt="Food 4">
       <img src="https://i.imgur.com/60srR0W.jpeg" alt="Food 5">
       <img src="https://i.imgur.com/5yGXXBe.jpeg" alt="Food 6">
-    </div>
+   </div>
   </div>
 </body>
 </html>
