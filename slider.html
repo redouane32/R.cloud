@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Slider</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: sans-serif; }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .slider img {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 10px;
+      scroll-snap-align: start;
+      border-radius: 10px;
+    }
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Our Dishes</h2>
+    <div class="slider">
+      <img src="https://i.imgur.com/ChWWZAt.jpeg" alt="Dish 1">
+      <img src="https://i.imgur.com/Ulp9kO8.jpeg" alt="Dish 2">
+      <img src="https://i.imgur.com/OPVc2vo.jpeg" alt="Dish 3">
+      <img src="https://i.imgur.com/SjKDUtn.jpeg" alt="Dish 4">
+      <img src="https://i.imgur.com/60srR0W.jpeg" alt="Food 5">
+      <img src="https://i.imgur.com/5yGXXBe.jpeg" alt="Food 6">
+    </div>
+  </div>
+</body>
+</html>
