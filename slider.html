@@ -4,48 +4,39 @@
   <meta charset="UTF-8">
   <title>Food Slider</title>
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: sans-serif; }
-
-    .container {
-      padding: 10px;
-      text-align: center;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
     }
-
     .slider {
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
       gap: 10px;
-      padding: 10px 0;
+      padding: 10px;
+      height: 220px;
+      box-sizing: border-box;
     }
-
-    .slider img {
-      flex: 0 0 auto;
-      width: 250px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-      scroll-snap-align: center;
-    }
-
     .slider::-webkit-scrollbar {
       display: none;
+    }
+    .slider img {
+      height: 100%;
+      width: auto;
+      border-radius: 10px;
+      scroll-snap-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Our Dishes</h2>
-    <div class="slider">
-      <img src="https://i.imgur.com/ChWWZAt.jpeg" alt="Food 1">
-      <img src="https://i.imgur.com/Ulp9kO8.jpeg" alt="Food 2">
-      <img src="https://i.imgur.com/OPVc2vo.jpeg" alt="Food 3">
-      <img src="https://i.imgur.com/SjKDUtn.jpeg" alt="Food 4">
-      <img src="https://i.imgur.com/60srR0W.jpeg" alt="Food 5">
-      <img src="https://i.imgur.com/5yGXXBe.jpeg" alt="Food 6">
-   </div>
+  <div class="slider">
+    <img src="https://i.imgur.com/ChWWZAt.jpeg" alt="Food 1">
+    <img src="https://i.imgur.com/Ulp9kO8.jpeg" alt="Food 2">
+    <img src="https://i.imgur.com/OPVc2vo.jpeg" alt="Food 3">
+    <img src="https://i.imgur.com/SjKDUtn.jpeg" alt="Food 4">
+    <img src="https://i.imgur.com/60srR0W.jpeg" alt="Food 5">
+    <img src="https://i.imgur.com/5yGXXBe.jpeg" alt="Food 6">
   </div>
 </body>
 </html>
